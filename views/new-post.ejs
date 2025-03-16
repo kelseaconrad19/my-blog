@@ -1,0 +1,10 @@
+<%- include("header.ejs") %>
+
+<h1>Create a Blog Post</h1>
+
+<form action="/posts" method="POST">
+  <input type="text" name="title" placeholder="Title" required >
+  <input type="file" name="image" placeholder="Image" required >
+  <textarea name="content" placeholder="Content" required></textarea>
+  <button type="submit">Publish Post</button>
+</form>
